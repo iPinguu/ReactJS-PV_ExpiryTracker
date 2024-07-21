@@ -3,6 +3,7 @@
 .main {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-items: center;
   min-height: 100vh;
   background-color: white;
@@ -31,10 +32,32 @@
 }
 
 .centerElement {
+  /* Centers element in both vertical and horizontal axis within the parent element */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh
+}
+
+.centerButton {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  font-family: "Kadwa", Kadwa;
+  font-size: 15px;
+  color: #233746;
+  background-color: #F5F1E6;
+  margin: 15px;
+  border-radius: 8px;
+  width: 60vw;
+  height: 40px;
 }
 
 .footer {

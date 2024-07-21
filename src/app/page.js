@@ -5,12 +5,12 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.header}>
+      <div id="headerDiv" className={styles.header}>
         <div className={styles.centerElement}> 
           <DisplayImage imageAddr={"/images/PV_logo_transparent.png"} altText={"PetValu Logo"}/> 
         </div>
         
-        <div className={styles.subHeadingDiv}>
+        <div id="subHeadingDiv" className={styles.subHeadingDiv}>
             <div className={styles.centerElement}>
               <p style={{fontSize: "0.95rem"}}> <span style={{color: "#C1363C"}}>Unofficial</span>
               <span> Product-Expiry Tracker&#8482;</span>
@@ -19,9 +19,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.footer}>
+      <div className={styles.centerElement}>
+        <div id="buttonDiv" className={styles.centerButton}>
+          <button className={styles.button}>Show Expiring Products</button>
+          <button className={styles.button}>Dry Food Products</button>
+          <button className={styles.button}>Wet Food Products</button>
+          <button className={styles.button}>Treat Products</button>
+          <button className={styles.button}>Dental Products</button>
+          <button className={styles.button}>Wellness Products</button>
+        </div>
+      </div>
+
+      <div id="footerDiv" className={styles.footer}>
         <h6 style={{color: "#C1363C"}}>Contact for Cease and Desist</h6>
-        <ColoredLine color={"white"} width={"85%"} margin={"5"}/>
+        <ColoredLine color={"white"} width={"85%"} margin={"0.5rem"}/>
         <h6>&copy; 2024 Franz Luiz Sy</h6>
       </div>
     </main>
