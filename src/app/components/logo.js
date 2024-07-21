@@ -1,9 +1,9 @@
 import React from "react";
 
-const DisplayImage= () => {
+const DisplayImage= ({imageAddr, altText}) => {
     return (
         <div>
-            <img src="/images/PV_logo_transparent.png" alt="PetValu Logo"/>
+            <img src={imageAddr} alt={altText}/>
         </div>
     );
 };
