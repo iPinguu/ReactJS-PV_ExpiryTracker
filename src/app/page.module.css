@@ -41,12 +41,15 @@
   height: 100vh
 }
 
-.centerButton {
+.buttonDiv {
   position: absolute;
+  top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  height: auto;
+  overflow-y: scroll;
 }
 
 .button {
@@ -56,7 +59,7 @@
   background-color: #F5F1E6;
   margin: 15px;
   border-radius: 8px;
-  width: 60vw;
+  width: 60vw;  
   height: 40px;
 }
 

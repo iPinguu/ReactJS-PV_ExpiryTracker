@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className={styles.centerElement}>
-        <div id="buttonDiv" className={styles.centerButton}>
+        <div id="buttonDiv" className={styles.buttonDiv}>
           <button className={styles.button}>Show Expiring Products</button>
           <button className={styles.button}>Dry Food Products</button>
           <button className={styles.button}>Wet Food Products</button>
