@@ -21,9 +21,11 @@ export default function Home() {
 
       <div className={styles.centerElement}>
         <div id="buttonDiv" className={styles.buttonDiv}>
-          <button className={styles.button}>Show Expiring Products</button>
-          <button className={styles.button}>Add Product</button>
-          <button className={styles.button}>Edit a Product</button>
+            <button className={styles.button}>Dry Food Products</button>
+          <button className={styles.button}>Wet Food Products</button>
+          <button className={styles.button}>Treat Products</button>
+          <button className={styles.button}>Dental Products</button>
+          <button className={styles.button}>Wellness Products</button>
         </div>
       </div>
 
