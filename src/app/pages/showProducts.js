@@ -1,24 +1,11 @@
-import DisplayImage from "./components/logo";
-import ColoredLine from "./components/coloredLine";
 import styles from "./page.module.css";
+import {Header, Footer} from "@/app/components"
 
-export default function Home() {
+export default function showProducts() {
   return (
     <main className={styles.main}>
-      <div id="headerDiv" className={styles.header}>
-        <div className={styles.centerElement}> 
-          <DisplayImage imageAddr={"/images/PV_logo_transparent.png"} altText={"PetValu Logo"}/> 
-        </div>
+        <Header/>
         
-        <div id="subHeadingDiv" className={styles.subHeadingDiv}>
-            <div className={styles.centerElement}>
-              <p style={{fontSize: "0.95rem"}}> <span style={{color: "#C1363C"}}>Unofficial</span>
-              <span> Product-Expiry Tracker&#8482;</span>
-              </p>
-            </div>
-        </div>
-      </div>
-
       <div className={styles.centerElement}>
         <div id="buttonDiv" className={styles.buttonDiv}>
             <button className={styles.button}>Dry Food Products</button>
