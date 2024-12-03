@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import {Header, Footer} from "@/app/components"
+import {Header, Footer, ColoredLine} from "@/app/components"
 
 export default function ShowProducts() {
   return (
@@ -21,6 +21,8 @@ export default function ShowProducts() {
         <ColoredLine color={"white"} width={"85%"} margin={"0.5rem"}/>
         <h6>&copy; 2024 Franz Luiz Sy</h6>
       </div>
+    
+    <Footer />
     </main>
   );
 }
