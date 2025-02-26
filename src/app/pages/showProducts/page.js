@@ -1,7 +1,11 @@
-import styles from "./page.module.css";
-import {Header, Footer, ColoredLine} from "@/app/components"
+import styles from "@/app/page.module.css";
+// import {Header, Footer, ColoredLine} from "@components/*";
+import  Header  from "@components/Header";
+import Footer from "@components/Footer";
+import ColoredLine from "@components/ColoredLine";
 
 export default function ShowProducts() {
+  
   return (
     <main className={styles.main}>
         <Header/>

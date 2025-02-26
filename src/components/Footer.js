@@ -1,8 +1,8 @@
 import React from "react";
-import ColoredLine from "@/app/components/coloredLine";
+import ColoredLine from "@/components/ColoredLine";
 import styles from "@/app/page.module.css";
 
-const footer = () => {
+export default function Footer() {
     return (
         <div id="footerDiv" className={styles.footer}>
             <h6 style={{color: "#C1363C"}}>Contact for Cease and Desist</h6>
@@ -11,5 +11,3 @@ const footer = () => {
         </div>
     );
 }
-
-export default footer;
