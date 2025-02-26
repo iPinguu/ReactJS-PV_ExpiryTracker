@@ -23,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Current Status
 ~~UI Design is Complete~~
 
-*Page routing is a work in progress*
+~~Page routing is a work in progress~~
 
 Database API needs to be implemented
 
