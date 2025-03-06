@@ -1,12 +1,12 @@
 import styles from '@/app/page.module.css';
-import DisplayImage from './logo';
+import DisplayImage from '@/components/Logo';
 import React from "react";
 
-const header = () => {
+export default function Header () {
     return(
         <div id="headerDiv" className={styles.header}>
             <div className={"centerElement"}> 
-            <DisplayImage imageAddr={"/images/PV_logo_transparent.png"} altText={"PetValu Logo"}/> 
+                <DisplayImage src={"/images/PV_logo_transparent.png"} alt={"PetValu logo"}/>
             </div>
             
             <div id="subHeadingDiv" className={styles.subHeadingDiv}>
@@ -19,5 +19,3 @@ const header = () => {
       </div>
     );
 }
-
-export default header;

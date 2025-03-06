@@ -1,10 +1,16 @@
+'use client'
+
 import styles from "./page.module.css";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import { useRouter } from "next/navigation";
 // import routeTo from "./components/routeTo";
+
+// import {Header, Footer} from "@components/*";
+import  Header  from "@components/Header";
+import Footer from "@components/Footer";
 
 export default function Home() {
 
+  const router = useRouter();
   
   return (
     <main className={styles.main}>
@@ -12,7 +18,7 @@ export default function Home() {
 
       <div className={styles.centerElement}>
         <div id="buttonDiv" className={styles.buttonDiv}>
-          <button className={styles.button}>Show Expiring Products</button>
+          <button type="button" onClick={() => router.push('pages/showProducts')} className={styles.button}>Show Expiring Products</button>
           <button className={styles.button}>Add Product</button>
           <button className={styles.button}>Edit a Product</button>
         </div>
