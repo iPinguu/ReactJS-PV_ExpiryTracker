@@ -29,4 +29,4 @@ export default function ShowProducts() {
     <Footer />
     </main>
   );
-}
+}z

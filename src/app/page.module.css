@@ -52,6 +52,18 @@
   overflow-y: scroll;
 }
 
+.inptuDiv {
+  
+}
+
+.inputForm {
+  margin-bottom: 20px;
+  width: 60vw;
+  height: 35px;
+  background-color: white;
+  border-radius: 8px;
+}
+
 .button {
   font-family: "Kadwa", Kadwa;
   font-size-adjust: 10vh;
@@ -60,8 +72,8 @@
   background-color: #F5F1E6;
   margin: 15px;
   border-radius: 8px;
-  width: 60vw;  
-  height: 40px;
+  width: 40vw;  
+  height: 30px;
 }
 
 .footer {
