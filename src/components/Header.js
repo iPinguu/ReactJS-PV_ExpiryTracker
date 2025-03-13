@@ -6,7 +6,7 @@ export default function Header () {
     return(
         <div id="headerDiv" className={styles.header}>
             <div className={"centerElement"}> 
-                <DisplayImage src={"/images/PV_logo_transparent.png"} alt={"PetValu logo"}/>
+                <DisplayImage src={"./public/images/PV_logo_transparent.png"} alt={"PetValu logo"}/>
             </div>
             
             <div id="subHeadingDiv" className={styles.subHeadingDiv}>

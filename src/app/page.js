@@ -2,13 +2,10 @@
 
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
-// import routeTo from "./components/routeTo";
-
-// import {Header, Footer} from "@components/*";
 import  Header  from "@components/Header";
 import Footer from "@components/Footer";
 
-export default function Home() {
+export default function Login() {
 
   const router = useRouter();
   
@@ -17,10 +14,19 @@ export default function Home() {
       <Header/>
 
       <div className={styles.centerElement}>
-        <div id="buttonDiv" className={styles.buttonDiv}>
-          <button type="button" onClick={() => router.push('pages/showProducts')} className={styles.button}>Show Expiring Products</button>
-          <button className={styles.button}>Add Product</button>
-          <button className={styles.button}>Edit a Product</button>
+        
+        <div>
+          <form>
+            <div>
+              <input className={styles.inputForm} name="storeID"/>
+            </div>
+            <div>
+              <input className={styles.inputForm} name="empID"/>
+            </div>
+            <div>
+              <button type="button" onClick={() => router.push('pages/home')} className={styles.button}>Login</button>
+            </div>
+          </form>
         </div>
       </div>
 
